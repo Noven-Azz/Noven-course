@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noven Courses</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Poppins:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <script
+      src="https://kit.fontawesome.com/ac03d979aa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><img src="./logo.png" alt="" /></a>
+
+      <div class="navbar-nav">
+        <a href="#">Beranda</a>
+        <a href="#" class="program-down"
+          >Program <i class="fa-solid fa-angle-down"></i
+        ></a>
+        <a href="#">Job Connector</a>
+      </div>
+
+      <div class="button-navbar">
+        <button class="btnnav1" id="login-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Login
+        </button>
+        <button class="btnnav2" id="register-btn">
+          <i class="fa-solid fa-user-plus"></i> Gabung Program
+        </button>
+      </div>
+
+      <div id="hamburger-menu">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </div>
+    </nav>
+
+    <!-- Program nav  start -->
+    <div class="program-nav">
+      <a href="">Front End</a>
+      <a href="">Git & Github</a>
+      <a href="">React</a>
+      <a href="">Tailwind</a>
+      <a href="">Boostrap</a>
+    </div>
+    <!-- Program nav  end -->
+
+    <!-- login form start -->
+    <div id="login-bg">
+      <div class="login" id="login">
+        <div class="form-container">
+          <div id="close-btn-login">
+            <i class="fa-solid fa-xmark" style="color: #ff0000"></i>
+          </div>
+          <div class="img-login">
+            <img src="./logo.png" alt="" />
+          </div>
+          <p class="title">Login</p>
+          <form class="form">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="" />
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder=""
+              />
+              <div class="forgot">
+                <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+              </div>
+            </div>
+            <button class="sign">Sign in</button>
+          </form>
+          <div class="social-message">
+            <div class="line"></div>
+            <p class="message">Login with social accounts</p>
+            <div class="line"></div>
+          </div>
+          <div class="social-icons">
+            <button aria-label="Log in with Google" class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                class="w-5 h-5 fill-current"
+              >
+                <path
+                  d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"
+                ></path>
+              </svg>
+            </button>
+            <button aria-label="Log in with Twitter" class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                class="w-5 h-5 fill-current"
+              >
+                <path
+                  d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"
+                ></path>
+              </svg>
+            </button>
+            <button aria-label="Log in with GitHub" class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                class="w-5 h-5 fill-current"
+              >
+                <path
+                  d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <p class="signup">
+            Don't have an account?
+            <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- login form end -->
+
+    <!-- register form start -->
+    <div id="register-bg">
+      <div class="register" id="register">
+        <form class="form">
+          <div id="close-btn-register">
+            <i class="fa-solid fa-circle-xmark" style="color: #ff0000"></i>
+          </div>
+          <div class="register-img">
+            <img src="./logo.png" alt="" />
+          </div>
+          <span class="signup">Sign Up</span>
+          <input type="email" placeholder="Email address" class="form--input" />
+          <input type="password" placeholder="Password" class="form--input" />
+          <input
+            type="password"
+            placeholder="Confirm password"
+            class="form--input"
+          />
+
+          <div class="form--marketing">
+            <input id="okayToEmail" type="checkbox" />
+            <label for="okayToEmail" class="checkbox">
+              I want to join this course
+            </label>
+          </div>
+          <button class="form--submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <!-- register form end -->
+
+    <!-- hamburger menu start  -->
+    <div class="hamburger">
+      <a href="#">Beranda</a>
+      <a href="#">Program <i class="fa-solid fa-angle-down"></i></a>
+      <a href="#">Job Connector</a>
+    </div>
+    <!-- hamburger menu end -->
+
+    <!-- Navbar end -->
+
+    <!-- Hero start -->
+    <section id="hero">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Semangat Belajar Jadi <span>Front End Developer</span></h1>
+          <br />
+          <p>
+            Materi pembelajaran online dalam bentuk video cara menjadi seorang
+            Front End Web Developer. Cocok untuk mencari skill baru di bidang IT
+            khususnya menjadi web developer dan dapat membuat website atau
+            mengembangkan bisnis online sendiri.
+            <br />
+            <br />
+            Bagian kalian yang ingin menjadi seorang web developer tapi tidak
+            ngerti coding, kalian akan diajarin dari 0 !
+          </p>
+          <br />
+          <button class="hero1" id="register-btn2">
+            <i class="fa-solid fa-arrow-right-long"></i> Gabung Program
+          </button>
+          <a href="https://wa.link/ood61u" target="_blank"
+            ><button class="hero2">
+              <i class="fa-solid fa-headset"></i> Chat CS
+            </button>
+          </a>
+        </div>
+        <div class="hero-img"><img src="./Untitled-1.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- Hero end -->
+
+    <!-- About start -->
+    <section id="about">
+      <div class="about">
+        <div class="about-content">
+          <h1>Apa itu <span>Noven Course ?</span></h1>
+          <br />
+          <p>
+            Membantu para generasi muda pelajar khususnya peminatan pada Front
+            End Developer untuk mempelajari dasar-dasar dalam pembuatan webite
+            yang berbasis HTML, CSS, dan Javascript. Membantu para peminat untuk
+            belajar coding dari 0 hingga dapat membangun sebuah website yang
+            statis maupun dinamis.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="./hitesh-choudhary-pMnw5BSZYsA-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <!-- Fasilitas start -->
+    <section id="fasilitas">
+      <div class="fasilitas">
+        <div class="head-fasilitas">
+          <h1>Fasilitas & <span>Benefit</span></h1>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-content" id="move-left1">
+            <div class="benefit-left">
+              <i class="fa-solid fa-photo-film" style="color: #ff0000"></i>
+            </div>
+            <div class="benefit-right">
+              <h1>Video Materi</h1>
+              <p>
+                Video materi yang interaktif, dapat dipahami dengan mudah oleh
+                penonton, dan dapat diputar berulang-ulang
+              </p>
+            </div>
+          </div>
+          <div class="benefit-content" id="move-right2">
+            <div class="benefit-left">
+              <i class="fa-solid fa-message" style="color: #04ff00"></i>
+            </div>
+            <div class="benefit-right">
+              <h1>Bebas Konsultasi</h1>
+              <p>
+                Error, stuck atau punya kendala saat belajar ngikutin materi?
+                Langsung tanyakan kepada admin
+              </p>
+            </div>
+          </div>
+          <div class="benefit-content" id="move-left3">
+            <div class="benefit-left">
+              <i class="fa-solid fa-certificate" style="color: #ffd700"></i>
+            </div>
+            <div class="benefit-right">
+              <h1>Sertifikat</h1>
+              <p>
+                Penghargaan dalam bentuk sertifikat digital sebagai bukti
+                mengkuti kursus ini dari awal hingga akhir
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fasilitas end -->
+
+    <!-- study start -->
+    <section id="study">
+      <div class="study">
+        <div class="study-content">
+          <div class="study-left">
+            <img src="./Artboard 1.png" alt="" />
+          </div>
+          <div class="study-right">
+            <p>
+              Video pembelajaran yang terarah mulai dari dasar hingga semi
+              expert. Alur belajar menggunakan roadmap dari
+              <a href="https://roadmap.sh/frontend?r=frontend-beginner"
+                >https://roadmap.sh/frontend?r=frontend-beginner</a
+              >, sehingga mengikuti roadmap Front End Developer yang digunakan
+              seluruh dunia. <br />
+              <br />
+              Bagi pemula tidak usah khawatir, karena akan di bimbing dari nol.
+              Bagian kalian yang tidak mempunyai background di IT sama sekali,
+              di sini kalian akan di ajari coding.
+            </p>
+          </div>
+        </div>
+        <div class="study-content" id="study-switch">
+          <div class="study-left">
+            <img src="./study-2.png" alt="" />
+          </div>
+          <div class="study-right">
+            <p>
+              Video pembelajaran yang terarah mulai dari dasar hingga semi
+              expert. Alur belajar menggunakan roadmap dari
+              <a href="https://roadmap.sh/frontend?r=frontend-beginner"
+                >https://roadmap.sh/frontend?r=frontend-beginner</a
+              >, sehingga mengikuti roadmap Front End Developer yang digunakan
+              seluruh dunia. <br />
+              <br />
+              Bagi pemula tidak usah khawatir, karena akan di bimbing dari nol.
+              Bagian kalian yang tidak mempunyai background di IT sama sekali,
+              di sini kalian akan di ajari coding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- study end -->
+
+    <!-- Kelas start -->
+    <section id="kelas">
+      <div class="kelas">
+        <div class="kelas-top">
+          <div class="kelas-web">
+            <img src="./img/kelas/fed.jpg" alt="" />
+            <p>By Noven Course</p>
+            <h2>Front End Developer</h2>
+            <p><i class="fa-solid fa-chart-line"></i> Pemula</p>
+            <p><i class="fa-solid fa-clock"></i> 3 Jam</p>
+            <p><i class="fa-solid fa-book"></i> 30 Modul</p>
+            <div class="kelas-line"></div>
+            <p class="kelas-price">Rp 250,000</p>
+          </div>
+          <div class="kelas-web">
+            <img src="./img/kelas/github.jpg" alt="" />
+            <p>By Noven Course</p>
+            <h2>Belajar Git & Github</h2>
+            <p><i class="fa-solid fa-chart-line"></i> Pemula</p>
+            <p><i class="fa-solid fa-clock"></i> 3 Jam</p>
+            <p><i class="fa-solid fa-book"></i> 30 Modul</p>
+            <div class="kelas-line"></div>
+            <p class="kelas-price">Rp 250,000</p>
+          </div>
+          <div class="kelas-web">
+            <img src="./img/kelas/react.jpg" alt="" />
+            <p>Belajar React JS</p>
+            <h2>Belajar React</h2>
+            <p><i class="fa-solid fa-chart-line"></i> Pemula</p>
+            <p><i class="fa-solid fa-clock"></i> 3 Jam</p>
+            <p><i class="fa-solid fa-book"></i> 30 Modul</p>
+            <div class="kelas-line"></div>
+            <p class="kelas-price">Rp 250,000</p>
+          </div>
+        </div>
+        <div class="kelas-bottom">
+          <div class="kelas-web">
+            <img src="./img/kelas/tailwind.jpg" alt="" />
+            <p>By Noven Course</p>
+            <h2>Belajar Tailwind CSS</h2>
+            <p><i class="fa-solid fa-chart-line"></i> Pemula</p>
+            <p><i class="fa-solid fa-clock"></i> 3 Jam</p>
+            <p><i class="fa-solid fa-book"></i> 30 Modul</p>
+            <div class="kelas-line"></div>
+            <p class="kelas-price">Rp 250,000</p>
+          </div>
+          <div class="kelas-web">
+            <img src="./img/kelas/boostrap.jpg" alt="" />
+            <p>By Noven Course</p>
+            <h2>Belajar Boostrap CSS</h2>
+            <p><i class="fa-solid fa-chart-line"></i> Pemula</p>
+            <p><i class="fa-solid fa-clock"></i> 3 Jam</p>
+            <p><i class="fa-solid fa-book"></i> 30 Modul</p>
+            <div class="kelas-line"></div>
+            <p class="kelas-price">Rp 250,000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kelas end -->
+
+    <!-- Materi start -->
+    <section id="materi">
+      <div class="materi-head">
+        <h1><span>Materi</span> Belajar</h1>
+      </div>
+      <div class="materi">
+        <div class="materi-content-top">
+          <div class="materi-content">
+            <img src="/img/materi/web.png" alt="" />
+            <p>
+              Mejelaskan tentang apa itu website, fungsi WWW, macam-macam web
+              browser, kemanan pada website, domain, dsb
+            </p>
+          </div>
+          <div class="materi-content">
+            <img src="/img/materi/html.png" alt="" />
+            <p>
+              Mejelaskan tentang apa itu HTML, apa itu saja struktur tag pada
+              HTML, bagaimana cara menambahkan gambar, tabel, hyperlink,
+              paragraf, dll
+            </p>
+          </div>
+        </div>
+        <div class="materi-content-bottom">
+          <div class="materi-content">
+            <img src="/img/materi/css.png" alt="" />
+            <p>
+              Mejelaskan tentang apa itu CSS, bagaimana cara agar halaman
+              website menjadi rapi dan optimal di berbagai ukuran layar
+              pengguna, baik itu desktop maupun smartphone.
+            </p>
+          </div>
+          <div class="materi-content">
+            <img src="/img/materi/js.png" alt="" />
+            <p>
+              Mejelaskan tentang apa itu Javascript, bagaimana cara membuat
+              webiste agar lebih dinamis dan interaktif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Materi end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <img src="./logo.png" alt="" />
+          <p>
+            Materi pembelajaran online dalam bentuk video cara menjadi seorang
+            Front End Web Developer. Cocok untuk mencari skill baru di bidang IT
+            khususnya menjadi web developer
+          </p>
+        </div>
+        <div class="footer-contact">
+          <div class="contact-head">
+            <h1>Kontak kami</h1>
+          </div>
+          <div class="contact" id="contact1">
+            <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+            <a href="">novencourse@gmail.com</a>
+          </div>
+          <div class="contact">
+            <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>
+            <a href="">+62 12 3456 7890</a>
+          </div>
+          <div class="contact">
+            <i class="fa-solid fa-location-dot" style="color: #ffffff"></i>
+            <a href=""
+              >Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kidul, Kec.
+              Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah 53147</a
+            >
+          </div>
+        </div>
+        <div class="footer-logo">
+          <div class="footer-logo-head">
+            <h1>Media Sosial</h1>
+          </div>
+          <a href=""
+            ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            >Instagram</a
+          >
+          <a href=""
+            ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+            >Twitter</a
+          >
+          <a href=""
+            ><i class="fa-brands fa-tiktok" style="color: #ffffff"></i>Tiktok</a
+          >
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-copy">
+        Cretated by <span>noven</span>.| &copy; 2023.
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- My script -->
+    <script src="script.js"></script>
+  </body>
+</html>
